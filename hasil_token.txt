@@ -1,0 +1,118 @@
+
+================ HASIL ANALISIS TOKEN ================
+No   Token/String                                    Kelompok              Baris   Kolom   
+-------------------------------------------------------------------------------------------
+1    #                                               Simbol/Tanda Baca     1       1       
+2    include                                         Reserve Word          1       2       
+3    <                                               Simbol/Tanda Baca     1       10      
+4    stdio                                           Variabel              1       11      
+5    .                                               Simbol/Tanda Baca     1       16      
+6    h                                               Variabel              1       17      
+7    >                                               Simbol/Tanda Baca     1       18      
+8    int                                             Reserve Word          3       1       
+9    main                                            Variabel              3       5       
+10   (                                               Simbol/Tanda Baca     3       9       
+11   )                                               Simbol/Tanda Baca     3       10      
+12   {                                               Simbol/Tanda Baca     3       12      
+13   int                                             Reserve Word          4       5       
+14   a                                               Variabel              4       9       
+15   ,                                               Simbol/Tanda Baca     4       10      
+16   b                                               Variabel              4       12      
+17   ,                                               Simbol/Tanda Baca     4       13      
+18   c                                               Variabel              4       15      
+19   ;                                               Simbol/Tanda Baca     4       16      
+20   scanf                                           Variabel              5       5       
+21   (                                               Simbol/Tanda Baca     5       10      
+22   "                                               Literal String        5       11      
+23   %                                               Simbol/Tanda Baca     5       12      
+24   d                                               Variabel              5       13      
+25   %                                               Simbol/Tanda Baca     5       15      
+26   d                                               Variabel              5       16      
+27   %                                               Simbol/Tanda Baca     5       18      
+28   d                                               Variabel              5       19      
+29   "                                               Literal String        5       20      
+30   ,                                               Simbol/Tanda Baca     5       21      
+31   &                                               Simbol/Tanda Baca     5       23      
+32   a                                               Variabel              5       24      
+33   ,                                               Simbol/Tanda Baca     5       25      
+34   &                                               Simbol/Tanda Baca     5       27      
+35   b                                               Variabel              5       28      
+36   ,                                               Simbol/Tanda Baca     5       29      
+37   &                                               Simbol/Tanda Baca     5       31      
+38   c                                               Variabel              5       32      
+39   )                                               Simbol/Tanda Baca     5       33      
+40   ;                                               Simbol/Tanda Baca     5       34      
+41   c                                               Variabel              7       5       
+42   +=                                              Simbol/Tanda Baca     7       7       
+43   a                                               Variabel              7       10      
+44   +                                               Simbol/Tanda Baca     7       11      
+45   b                                               Variabel              7       12      
+46   ;                                               Simbol/Tanda Baca     7       13      
+47   for                                             Reserve Word          8       5       
+48   (                                               Simbol/Tanda Baca     8       9       
+49   int                                             Reserve Word          8       10      
+50   i                                               Variabel              8       14      
+51   =                                               Simbol/Tanda Baca     8       16      
+52   0                                               Literal Angka         8       18      
+53   ;                                               Simbol/Tanda Baca     8       19      
+54   i                                               Variabel              8       21      
+55   <                                               Simbol/Tanda Baca     8       23      
+56   c                                               Variabel              8       25      
+57   ;                                               Simbol/Tanda Baca     8       26      
+58   i                                               Variabel              8       28      
+59   ++                                              Simbol/Tanda Baca     8       29      
+60   )                                               Simbol/Tanda Baca     8       31      
+61   printf                                          Variabel              8       33      
+62   (                                               Simbol/Tanda Baca     8       39      
+63   "                                               Literal String        8       40      
+64   %                                               Simbol/Tanda Baca     8       41      
+65   d                                               Variabel              8       42      
+66   "                                               Literal String        8       43      
+67   ,                                               Simbol/Tanda Baca     8       44      
+68   i                                               Variabel              8       46      
+69   )                                               Simbol/Tanda Baca     8       47      
+70   ;                                               Simbol/Tanda Baca     8       48      
+71   return                                          Reserve Word          10      5       
+72   0                                               Literal Angka         10      12      
+73   ;                                               Simbol/Tanda Baca     10      13      
+74   }                                               Simbol/Tanda Baca     11      1       
+
+================ RINGKASAN PER KELOMPOK ================
+
+Reserve words (4):
+  for                 include             int                 return            
+
+Simbol dan tanda baca (16):
+  #                   %                   &                   (                 
+  )                   +                   ++                  +=                
+  ,                   .                   ;                   <                 
+  =                   >                   {                   }                 
+
+Variabel/identifier (10):
+  a                   b                   c                   d                 
+  h                   i                   main                printf            
+  scanf               stdio             
+
+Literal angka (1):
+  0                 
+
+Literal string (1):
+  "                 
+
+Literal karakter (0):
+  -
+
+Komentar (0):
+  -
+
+Token tidak dikenal (0):
+  -
+
+================ KALIMAT MATEMATIKA ================
+1. Baris 5 | ekspresi aritmetika, fungsi/pemanggilan fungsi
+   scanf (" % d % d % d ", & a, & b, & c);
+2. Baris 7 | persamaan/assignment, ekspresi aritmetika
+   c += a + b;
+3. Baris 8 | persamaan/assignment, ekspresi aritmetika, perbandingan/logika, fungsi/pemanggilan fungsi
+   for (int i = 0; i < c; i ++) printf (" % d ", i);
+======================================================
